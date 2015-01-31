@@ -14,7 +14,7 @@
     <FrameLayout
         android:id="@+id/container1"
         android:layout_width="fill_parent"
-        android:layout_height="251dp"
+        android:layout_height="180dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -22,13 +22,15 @@
         android:layout_marginStart="87dp"
         android:layout_marginTop="0dp"
         android:layout_gravity="center_horizontal|bottom"
-        android:background="@android:color/holo_red_dark"></FrameLayout>
+        android:background="@android:color/holo_red_dark"
+        android:layoutMode="clipBounds"></FrameLayout>
 
     <FrameLayout
         android:id="@+id/container2"
         android:layout_width="fill_parent"
-        android:layout_height="237dp"
+        android:layout_height="146dp"
         android:layout_gravity="right|top"
-        android:background="@android:color/holo_red_light"></FrameLayout>
+        android:background="@android:color/holo_red_light"
+        android:layoutMode="clipBounds"></FrameLayout>
 
 </FrameLayout>
