@@ -1,11 +1,20 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
     android:layout_height="fill_parent" tools:context="com.andriod.upc.fragments.Frag2"
-    android:background="@android:color/holo_purple">
+    android:background="@android:color/holo_purple"
+    android:id="@+id/id_fragment2">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView android:layout_width="match_parent" android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment"
         android:textSize="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send &quot;hi&quot; to main Activity"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="50dp" />
 
 </FrameLayout>

@@ -11,10 +11,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
-
+public class MainActivity extends ActionBarActivity
+    implements Frag2.OnFragmentMessage
+{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,35 +69,22 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * Frag1
-     */
-    public static class Frag1 extends Fragment {
-
-        public Frag1() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-            return rootView;
+    public void SendMessageToFragment(View v) {
+        Frag1 f = (Frag1) getSupportFragmentManager().findFragmentById(R.id.container1);
+        if(f != null) {
+            f.ShowMessage("Message received!");
         }
     }
 
-    /**
-     * Frag2
-     */
-    public static class Frag2 extends Fragment {
-
-        public Frag2() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_frag2, container, false);
-            return rootView;
-        }
+    @Override
+    public void onFragmentMessage(String msg)
+    {
+        TextView t = (TextView) findViewById(R.id.textView);
+        if(t!=null)
+            t.setText(msg);
     }
 }
+
+
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="good_afternoon">
+        <item>Good afternoon</item>
+        <item>Buenas tardes</item>
+        <item>Bona tarda</item>
+        <item>Guten abend</item>
+    </string-array>
+
+</resources>
