@@ -16,6 +16,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:textColor="#fffffcf9" />
+        style="@style/MiSubEstilo"/>
 
 </RelativeLayout>

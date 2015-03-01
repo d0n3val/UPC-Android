@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fragment_Test</string>
+    <string name="hello_world">This is the main activity</string>
+    <string name="fragment1_title">This is the 1st Fragment</string>
+    <string name="fragment2_title">This is the 2nd Fragment</string>
+    <string name="action_switch">Switch</string>
+
+</resources>

@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.done.fragment_test.Frag2"
+    android:background="#ffd7c5ff">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/mytext"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:text="@string/fragment2_title" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send message to activity from Frag2"
+        android:id="@+id/button"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="20dp" />
+
+</FrameLayout>

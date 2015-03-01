@@ -1,0 +1,39 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.done.fragments_practica2.LlistaImatges"
+    android:columnCount="3"
+    android:rowCount="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton1"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:background="@drawable/icon1"
+        android:layout_gravity="left"
+        android:onClick="OnClick1"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:background="@drawable/icon2"
+        android:layout_gravity="center_horizontal"
+        android:onClick="OnClick2"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:background="@drawable/icon3"
+        android:onClick="OnClick3"/>
+
+</GridLayout>

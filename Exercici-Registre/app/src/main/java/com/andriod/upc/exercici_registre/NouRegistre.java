@@ -37,7 +37,8 @@ public class NouRegistre extends Activity {
         final SeekBar bar = (SeekBar) findViewById(R.id.seekBar);
         final TextView text = (TextView) findViewById(R.id.textView2);
 
-        bar.setOnSeekBarChangeListener( new SeekBar.OnSeekBarChangeListener() {
+        SeekBar.OnSeekBarChangeListener listener = new SeekBar.OnSeekBarChangeListener()
+        {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 String f = String.format("Pes: %d", 30+i);
@@ -53,11 +54,13 @@ public class NouRegistre extends Activity {
             public void onStopTrackingTouch(SeekBar seekBar) {
 
             }
-        });
+        };
+
+        bar.setOnSeekBarChangeListener(listener);
     }
 
-    public void ClickRegistrar(View v)
-    {
+    public void ClickRegistrar(View v) {
+
         Intent intent = new Intent(this, MostrarResultat.class);
 
 
@@ -99,6 +102,7 @@ public class NouRegistre extends Activity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            ClickRegistrar(findViewById(id));
             return true;
         }
 
