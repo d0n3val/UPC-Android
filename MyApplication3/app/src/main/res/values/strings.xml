@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="action_settings">Settingss</string>
+    <string name="title_activity_main_activity2">Add New Note</string>
+</resources>
